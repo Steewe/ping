@@ -51,7 +51,7 @@
 		  },
 		  methods:{
 		  	get_data(){
-		  		axios.get("http://localhost:8000/status.csv")
+		  		axios.get("http://localhost:8000/status.txt")
 		  		.then(response => {
 		  			let statuses = response.data.split('\n')
 		  			let status_list = []

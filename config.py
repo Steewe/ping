@@ -1,10 +1,10 @@
 urls =  {
 	'http://www.google.com': 'google',
 	'http://www.adsfdsf.com': '',
-	'http://www.wykop.pl': 'sadasda',
+	'http://www.google.pl': 'sadasda',
 }
 
-logfile = './log.csv'
+logfile = './log.txt'
 
 
 wait = 10 # in seconds

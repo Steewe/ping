@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 import csv
 
-statusfile = './status.csv'
+statusfile = './status.txt'
 
 def main():
 	while True:
@@ -29,7 +29,7 @@ def main():
 			for logline in statuses:
 				csvwriter.writerow(logline)
 
-		with open(config.statusfile, 'w') as file:
+		with open(statusfile, 'w') as file:
 			csvwriter = csv.writer(file)
 			for logline in statuses:
 				csvwriter.writerow(logline)
