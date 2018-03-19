@@ -21,7 +21,6 @@ def main():
 			except requests.exceptions.RequestException as e: 
 				status = 'DOWN'
 			end = time.time()
-			print([page, datetime.now(), end - start, status ])
 			statuses.append([page, datetime.now(), end - start, status ])
 
 		with open(config.logfile, 'a') as csvfile:
@@ -34,7 +33,6 @@ def main():
 			for logline in statuses:
 				csvwriter.writerow(logline)
 
-		print (statuses)
 		time.sleep(config.wait)			
 
 if __name__ == "__main__":
